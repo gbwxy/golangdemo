@@ -1,4 +1,4 @@
-package main
+package common
 
 import (
 	"bytes"
@@ -9,9 +9,7 @@ import (
 
 func main() {
 
-	
 }
-
 
 func BenchmarkAddStringWithOperator(b *testing.B) {
 	hello := "hello"
@@ -39,7 +37,6 @@ func BenchmarkAddStringWithSprintf(b *testing.B) {
 		_ = fmt.Sprintf("%s,%s", hello, world)
 	}
 }
-
 
 func BenchmarkAddStringWithJoin(b *testing.B) {
 	hello := "hello"

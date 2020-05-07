@@ -1,4 +1,4 @@
-package main
+package basic
 
 import "fmt"
 
@@ -62,6 +62,5 @@ func main() {
 	printarrayponiter(&arr3)
 	fmt.Println("after execute.")
 	fmt.Println(arr1, arr3)
-
 
 }

@@ -1,4 +1,4 @@
-package main
+package basic
 
 import (
 	"bytes"
@@ -13,6 +13,7 @@ var (
 	b_pkg = true
 	c_pkg = "kkk"
 )
+
 //包内不能用 := 声明变量
 //abc, bcd := 123, false
 
@@ -118,7 +119,6 @@ func enums() {
 	)
 	fmt.Println(b, kb, mb, gb, tb, pb)
 }
-
 
 func main() {
 	//fmt.Println("Hello world!")

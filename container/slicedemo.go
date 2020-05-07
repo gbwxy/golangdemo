@@ -1,4 +1,6 @@
-package main
+package container
+
+import "fmt"
 
 func updateslice(arr []int) {
 	arr[0] = 100
@@ -83,12 +85,12 @@ func main() {
 	//s6 := append(s5, 13)
 	//s7 := append(s6, 14)
 	//
-	//fmt.Println("after append. ")
-	//fmt.Printf("arr = %v, len(arr) = %d, cap(arr) = %d \n", arr, len(arr), cap(arr))
-	//fmt.Printf("s2 = %v, len(s2) = %d, cap(s2) = %d \n", s2, len(s2), cap(s2))
-	//fmt.Printf("s3 = %v, len(s3) = %d, cap(s3) = %d \n", s3, len(s3), cap(s3))
-	//fmt.Printf("s4 = %v, len(s4) = %d, cap(s4) = %d \n", s4, len(s4), cap(s4))
-	//fmt.Printf("s5 = %v, len(s5) = %d, cap(s5) = %d \n", s5, len(s5), cap(s5))
-	//fmt.Printf("s6 = %v, len(s6) = %d, cap(s6) = %d \n", s6, len(s6), cap(s6))
-	//fmt.Printf("s7 = %v, len(s7) = %d, cap(s7) = %d \n", s7, len(s7), cap(s7))
+	fmt.Println("after append. ")
+	fmt.Printf("arr = %v, len(arr) = %d, cap(arr) = %d \n", arr, len(arr), cap(arr))
+	fmt.Printf("s2 = %v, len(s2) = %d, cap(s2) = %d \n", s2, len(s2), cap(s2))
+	fmt.Printf("s3 = %v, len(s3) = %d, cap(s3) = %d \n", s3, len(s3), cap(s3))
+	fmt.Printf("s4 = %v, len(s4) = %d, cap(s4) = %d \n", s4, len(s4), cap(s4))
+	fmt.Printf("s5 = %v, len(s5) = %d, cap(s5) = %d \n", s5, len(s5), cap(s5))
+	fmt.Printf("s6 = %v, len(s6) = %d, cap(s6) = %d \n", s6, len(s6), cap(s6))
+	fmt.Printf("s7 = %v, len(s7) = %d, cap(s7) = %d \n", s7, len(s7), cap(s7))
 }
