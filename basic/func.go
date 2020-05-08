@@ -35,13 +35,13 @@ func div(a, b int) (q, r int) {
 //func apply(op func(int, int) int, a, b int) int {
 //	pointer := reflect.ValueOf(op).Pointer()
 //	name := runtime.FuncForPC(pointer).Name()
-//	fmt.Println("Calling function %s with args "+
+//	fmt.Println("Calling functional %s with args "+
 //		"(%d,%d)", name, a, b)
 //	return op(a, b)
 //}
 
 func apply(op func(int, int) int, a, b int) int {
-	fmt.Println("Calling function %s with args "+
+	fmt.Println("Calling functional %s with args "+
 		"(%d,%d)", runtime.FuncForPC(reflect.ValueOf(op).Pointer()), a, b)
 	return op(a, b)
 }

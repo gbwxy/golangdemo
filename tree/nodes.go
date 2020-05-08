@@ -41,6 +41,21 @@ func (node *TreeNode) Traverse() {
 	node.Right.Traverse()
 }
 
+func (node *TreeNode) TraverseUseFunc() {
+	node.TraverseFuncf(func(n *TreeNode) {
+		n.PrintValue()
+	})
+}
+
 func CreateNode(value int) *TreeNode {
 	return &TreeNode{Value: value}
+}
+
+func (node *TreeNode) TraverseFuncf(f func(*TreeNode)) {
+	if node == nil {
+		return
+	}
+	node.Left.TraverseFuncf(f)
+	f(node)
+	node.Right.TraverseFuncf(f)
 }
