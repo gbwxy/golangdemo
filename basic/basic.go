@@ -50,6 +50,11 @@ func triangle() {
 	////fmt.Println(c)
 }
 
+//func Triangle(a int, b int) int {
+//	c := int(math.Sqrt(float64(a*a + b*b)))
+//	return c;
+//}
+
 func variableTypeDeduction() {
 	var a, b, c, s = 3, 4, false, "def"
 	fmt.Println(a, b, c, s)

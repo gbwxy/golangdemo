@@ -13,7 +13,7 @@ type Retriever interface {
 }
 
 func download(r Retriever) string {
-	return r.Get("http://www.imooc.com")
+	return r.Get("abchttp://www.imooc.com")
 }
 
 func main() {

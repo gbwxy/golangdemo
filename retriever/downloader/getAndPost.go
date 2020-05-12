@@ -18,11 +18,11 @@ type getAndPostI interface {
 }
 
 func getAndPostMoth(r getAndPostI) string {
-	r.Post("http://www.imooc.com", map[string]string{
+	r.Post("abchttp://www.imooc.com", map[string]string{
 		"name":   "ccmouse",
 		"course": "golang",
 	})
-	return r.Get("http://www.imooc.com")
+	return r.Get("abchttp://www.imooc.com")
 }
 
 func main() {
